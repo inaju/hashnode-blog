@@ -27,7 +27,7 @@ export default function BlogPostListItem({ post }: Props) {
             <span>{post.reactionCount} likes</span>
           </div>
         </div>
-        <div className="flex flex-wrap gap-x-2">{post.tags?.map((tag) => <Badge key={tag.name}>{tag.name.toLocaleLowerCase()}</Badge>)}</div>
+        <div className="flex flex-wrap gap-x-2 gap-y-2">{post.tags?.map((tag) => <Badge key={tag.name}>{tag.name.toLocaleLowerCase()}</Badge>)}</div>
         <span className="leading-tight text-sm text-muted-foreground">{post.brief}</span>
       </div>
     </li>
